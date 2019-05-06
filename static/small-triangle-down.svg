@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="8px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>small-triangle-down</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.0-Homepage-V1" transform="translate(-1241.000000, -447.000000)" fill="#353B50" fill-rule="nonzero">
+            <g id="Group-5" transform="translate(166.000000, 385.000000)">
+                <g id="small-triangle-down" transform="translate(1074.000000, 62.000000)">
+                    <path d="M1.36682033,1.6401844 L6.23177872,7.47813446 C6.5853428,7.90241136 7.2159075,7.95973543 7.6401844,7.60617134 C7.68664746,7.56745212 7.72950206,7.52459753 7.76822128,7.47813446 L12.6331797,1.6401844 C12.9867437,1.2159075 12.9294197,0.585342801 12.5051428,0.23177872 C12.3254278,0.0820162194 12.0988949,-5.15597148e-16 11.8649584,-8.8817842e-16 L2.13504161,2.22044605e-16 C1.58275686,3.23497668e-16 1.13504161,0.44771525 1.13504161,1 C1.13504161,1.23393651 1.21705783,1.4604694 1.36682033,1.6401844 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

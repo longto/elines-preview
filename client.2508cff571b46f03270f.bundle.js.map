@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/js/app.js"],"names":["__webpack_require__","r","__webpack_exports__"],"mappings":"8HAAAA,EAAAC,EAAAC,GAAAF,EAAA","file":"client.2508cff571b46f03270f.bundle.js","sourcesContent":["import 'bootstrap';\r\n\r\nif (module.hot) {\r\n  module.hot.accept();\r\n}\r\n"],"sourceRoot":""}

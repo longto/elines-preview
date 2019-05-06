@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/static/ico.png">
+<title>Elines</title>	
+<link href="/2.css" rel="stylesheet"></head>
+
+<body>
+    <div class="container">
+    <nav class="row navbar navbar-expand-lg navbar-light el-navbar">
+    <a class="navbar-brand" href="/">
+        <img src="/static/Group 35.svg" class="logo"></a>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">
+                Về Chúng Tôi 
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Hướng Dẫn</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Thông Tin</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Xem Đơn Hàng</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Tin Tức</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Đăng Nhập</a>
+        </li>
+        <li class="nav-item hot-line">
+            <a class="nav-link" href="tel:19001250">
+                <i class="el-icon el-icon--phone"></i>
+                1900 1250
+            </a>
+        </li>
+    </ul>
+    </div>
+    </nav>
+</div>
+  <div class="step__hero ">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="step__indicator ">
+                    <b class="step--bold">1. </b>
+                    Lựa chọn chuyến bay
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="step__indicator step__indicator--active">
+                    <b class="step--bold">2. </b>
+                    Nhập thông tin khách
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="step__indicator">
+                    <b class="step--bold">3. </b>
+                    Xác nhận & thanh toán
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="step__indicator step__indicator--active">
+                    Thay đổi
+                    <i class="el-icon el-icon--edit"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+  <section class="container step__body">
+        <div class="row">
+            <div class="col-md-8 col-lg-9">
+                
+<div class="el-form__header d-block d-sm-flex">
+    Thông tin người đặt vé
+    <div class="ml-auto text-sm-right mt-1 mt-sm-0">
+        ( 
+        <a href="#" class="text-underline"> Đăng ký </a>
+        để hưởng ưu đãi )
+    </div>
+</div>
+
+<form class="el-form mb-5">
+  <div class="form-row">
+
+    <div class="form-group col-md-8 col-lg-5 no-wrap">
+      <label for="fullName" require>Họ và tên</label>
+      <input type="text" class="form-control" id="fullName" placeholder="Họ và tên">
+      <span class="text-danger">
+        Error message sẽ nằm ở đây
+      </span>
+    </div>
+
+    <div class="form-group col-md-4 col-lg-2 no-wrap">
+      <label for="gender">Giới tính</label>
+      <select id="gender" class="form-control">
+        <option selected disabled>Chọn...</option>
+        <option>Nam</option>
+        <option>Nữ</option>
+      </select>
+    </div>
+
+    <div class="form-group col-lg-5 no-wrap">
+      <label for="useAsCustomerInfo">Có dùng làm thông tin hành khách</label>
+      <div class="row">
+          <label class="col-5 radiobox pt-2">
+            <input type="radio" class="radiobox__input" checked="checked" name="useAsCustomerInfo">
+            <span class="radiobox__label">
+              Có
+            </span>
+          </label>
+          <label class="col radiobox pt-2">
+            <input type="radio" class="radiobox__input" checked="checked" name="useAsCustomerInfo">
+            <span class="radiobox__label">
+              Không
+            </span>
+          </label>
+        </div>
+    </div>
+
+      <div class="form-group col-md-6 col-lg-5 no-wrap">
+        <label for="email" require>Email</label>
+        <input type="email" class="form-control" id="email" placeholder="email">
+      </div>
+
+      <div class="form-group col-md-6 col-lg no-wrap">
+        <label for="tel" require>Điện thoại di động</label>
+        <input type="tel" class="form-control" id="tel" placeholder="Điện thoại di động">
+      </div>
+
+      <div class="form-group col-lg no-wrap">
+        <label for="discountCode">Mã khuyến mãi</label>
+        <input type="text" class="form-control" id="discountCode" placeholder="Mã khuyến mãi">
+      </div>
+
+  </div>
+</form>
+
+<div class="mb-4"></div>
+
+<div class="el-form__header">
+    Thông tin hành khách
+</div>
+
+<div class="el-form__sub-header">
+    <i class="el-icon el-icon--user"></i>
+    Hành khách 1 ( Người lớn )
+</div>
+<form class="el-form">
+  <div class="form-row">
+
+    <div class="form-group col-md-8 col-lg-5 no-wrap">
+      <label for="fullName" require>Họ và tên</label>
+      <input type="text" class="form-control" id="fullName" placeholder="Họ và tên">
+    </div>
+
+    <div class="form-group col-md-4 col-lg-2 no-wrap">
+      <label for="gender">Giới tính</label>
+      <select id="gender" class="form-control">
+        <option selected disabled>Chọn...</option>
+        <option>Nam</option>
+        <option>Nữ</option>
+      </select>
+    </div>
+
+    <div class="form-group col-lg-5 no-wrap">
+      <label>&#8203;</label>
+      <select class="form-control">
+        <option selected>
+            Chiều về: miễn phí 7kg xách tay, 20kg kí gửi
+        </option>
+        <option>
+            Chiều đi: miễn phí 7kg xách tay
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group col-lg-5 ml-auto no-wrap">
+      <label>&#8203;</label>
+      <select class="form-control">
+        <option selected>
+          Chiều về: miễn phí 7kg xách tay, 20kg kí gửi
+        </option>
+        <option>
+          Chiều đi: miễn phí 7kg xách tay
+        </option>
+      </select>
+    </div>
+
+  </div>
+</form>
+
+<div class="el-form__delimiter"></div>
+
+<div class="el-form__sub-header">
+    <i class="el-icon el-icon--user"></i>
+    Hành khách 2 ( Người lớn )
+</div>
+<form class="el-form">
+  <div class="form-row">
+
+    <div class="form-group col-md-8 col-lg-5 no-wrap">
+      <label for="fullName" require>Họ và tên</label>
+      <input type="text" class="form-control" id="fullName" placeholder="Họ và tên">
+    </div>
+
+    <div class="form-group col-md-4 col-lg-2 no-wrap">
+      <label for="gender">Giới tính</label>
+      <select id="gender" class="form-control">
+        <option selected disabled>Chọn...</option>
+        <option>Nam</option>
+        <option>Nữ</option>
+      </select>
+    </div>
+
+    <div class="form-group col-lg-5 no-wrap">
+      <label>&#8203;</label>
+      <select class="form-control">
+        <option selected>
+            Chiều về: miễn phí 7kg xách tay, 20kg kí gửi
+        </option>
+        <option>
+            Chiều đi: miễn phí 7kg xách tay
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group col-lg-5 ml-auto no-wrap">
+      <label>&#8203;</label>
+      <select class="form-control">
+        <option selected>
+          Chiều về: miễn phí 7kg xách tay, 20kg kí gửi
+        </option>
+        <option>
+          Chiều đi: miễn phí 7kg xách tay
+        </option>
+      </select>
+    </div>
+
+  </div>
+</form>
+
+<div class="el-form__delimiter"></div>
+
+<div class="el-form__sub-header">
+    <i class="el-icon el-icon--user"></i>
+    Hành khách 3 ( Trẻ em )
+</div>
+
+<form class="el-form">
+  <div class="form-row">
+
+    <div class="form-group col-md-8 col-lg-5 no-wrap">
+      <label for="fullName" require>Họ và tên</label>
+      <input type="text" class="form-control" id="fullName" placeholder="Họ và tên">
+    </div>
+
+    <div class="form-group col-md-4 col-lg-2 no-wrap">
+      <label for="gender">Giới tính</label>
+      <select id="gender" class="form-control">
+        <option selected disabled>Chọn...</option>
+        <option>Nam</option>
+        <option>Nữ</option>
+      </select>
+    </div>
+
+    <div class="form-group col-lg-5 no-wrap">
+      <label>&#8203;</label>
+      <select class="form-control">
+        <option selected>
+            Chiều về: miễn phí 7kg xách tay, 20kg kí gửi
+        </option>
+        <option>
+            Chiều đi: miễn phí 7kg xách tay
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group col-lg-5 no-wrap">
+      <label for="birthDay" require>Ngày sinh</label>
+      <input type="date" class="form-control" id="birthDay" placeholder="Họ và tên">
+    </div>
+
+    <div class="form-group col-lg-5 ml-auto no-wrap">
+      <label>&#8203;</label>
+      <select class="form-control">
+        <option selected>
+          Chiều về: miễn phí 7kg xách tay, 20kg kí gửi
+        </option>
+        <option>
+          Chiều đi: miễn phí 7kg xách tay
+        </option>
+      </select>
+    </div>
+
+  </div>
+</form>
+
+<div class="el-form__delimiter"></div>
+
+<div class="el-form__sub-header">
+    <i class="el-icon el-icon--user"></i>
+    Hành khách 4 ( Em bé )
+</div>
+
+<form class="el-form">
+  <div class="form-row">
+
+    <div class="form-group col-md-8 col-lg-5 no-wrap">
+      <label for="fullName" require>Họ và tên</label>
+      <input type="text" class="form-control" id="fullName" placeholder="Họ và tên">
+    </div>
+
+    <div class="form-group col-md-4 col-lg-2 no-wrap">
+      <label for="gender">Giới tính</label>
+      <select id="gender" class="form-control">
+        <option selected disabled>Chọn...</option>
+        <option>Nam</option>
+        <option>Nữ</option>
+      </select>
+    </div>
+
+    <div class="form-group col-lg-5 no-wrap">
+      <label for="birthDay" require>Ngày sinh</label>
+      <input type="date" class="form-control" id="birthDay" placeholder="Họ và tên">
+    </div>
+
+  </div>
+</form>
+<div class="mb-5"></div>
+
+<div class="el-form__header">
+    Chọn cách Elines phục vụ bạn
+</div>
+Bây giờ là 12h 23 phút. Quý khách vui lòng lựa chọn đưa ra yêu cầu để Elines phục vụ:
+
+<form class="el-form container">
+    <div class="form-group d-flex align-items-center mt-2">
+        <label class="radiobox">
+          <input type="radio" class="radiobox__input" checked="checked" name="service-options">
+          <span class="radiobox__label">
+            Elines gọi lại cho tôi vào lúc
+          </span>
+        </label>
+        <select class="form-control w-auto mx-2">
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+    </select>
+    giờ
+    </div>
+    
+    <div class="form-group">
+        <label class="radiobox">
+          <input type="radio" class="radiobox__input" checked="checked" name="service-options">
+          <span class="radiobox__label">
+            Elines gọi ngay cho tôi nhé
+          </span>
+        </label>
+    </div>
+
+    <div class="form-group">
+        <label class="radiobox">
+          <input type="radio" class="radiobox__input" checked="checked" name="service-options">
+          <span class="radiobox__label">
+            Không cần gọi lại cho tôi
+          </span>
+        </label>
+    </div>
+
+    <div class="form-group">
+      <label class="checkbox" data-toggle="collapse" data-target="#moreRequirement">
+            <input type="checkbox" class="checkbox__input" />
+            <span class="checkbox__label" >
+                Yêu cầu thêm
+            </span>
+        </label>
+    </div>
+
+    <div class="form-group collapse" id="moreRequirement">
+        <textarea class="form-control" placeholder="Nhập nội dung yêu cầu"></textarea>
+    </div>
+</form>
+<div class="mb-4"></div>
+
+<div class="invoice">
+    <div class="invoice__header" data-toggle="collapse" data-target=".invoice__content">
+        Yêu cầu xuất hoá đơn
+    </div>
+    <div class="invoice__content collapse">
+        Quý khách có nhu cầu lấy hóa đơn giá trị gia tăng phải yêu cầu với phía Elines trong vòng 7 ngày kể từ thời điểm thanh toán đơn hàng. 
+        Quý khách vui lòng nhập tiếng Việt có dấu để việc xuất hóa đơn tránh bị sai sót.
+        <div class="mb-3"></div>
+
+        <form class="el-form container">
+            <div class="form-row">
+
+                <div class="form-group col-md-6 no-wrap">
+              <label for="taxCode" require>Mã số thuế</label>
+              <input type="text" class="form-control" id="taxCode" placeholder="Mã số thuế">
+            </div>
+
+            <div class="form-group col-md-6 no-wrap">
+              <label for="companyName" require>Tên công ty</label>
+              <input type="text" class="form-control" id="companyName" placeholder="Tên công ty">
+            </div>
+
+            <div class="form-group col-12 no-wrap">
+              <label for="addressOnBusinessRegistration" require>Địa chỉ trên giấy ĐKKD</label>
+              <input type="text" class="form-control" id="addressOnBusinessRegistration" placeholder="Địa chỉ">
+            </div>
+
+            <div class="form-group col-12 no-wrap">
+              <label for="billingAddress" require>Địa chỉ nhận hoá đơn</label>
+              <input type="text" class="form-control" id="billingAddress" placeholder="Địa chỉ">
+            </div>
+
+            <div class="form-group col-12 ">
+                <label require class="mb-2 no-wrap">Hình thức nhận hoá đơn</label>
+
+                <div class="form-group">
+                        <label class="radiobox pre-wrap">
+                          <input type="radio" class="radiobox__input" checked="checked" name="invoice-receipt-type">
+                          <span class="radiobox__label">
+                            Chỉ nhận thông báo qua SMS/Email
+                          </span>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="radiobox pre-wrap">
+                          <input type="radio" class="radiobox__input" name="invoice-receipt-type">
+                          <span class="radiobox__label">
+                            Gửi chuyển phát nhanh
+                          </span>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="radiobox pre-wrap">
+                          <input type="radio" class="radiobox__input" name="invoice-receipt-type">
+                          <span class="radiobox__label">
+                            Tại văn phòng Tầng 3, 333 Trần Khát Chân, Hai Bà Trưng, Hà Nội 
+                          </span>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="radiobox pre-wrap">
+                          <input type="radio" class="radiobox__input" name="invoice-receipt-type">
+                          <span class="radiobox__label">
+                            Tại văn phòng 12 Ngô Gia Tự, Đức Giang, Long Biên, Hà Nội 
+                          </span>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="radiobox pre-wrap">
+                          <input type="radio" class="radiobox__input" name="invoice-receipt-type">
+                          <span class="radiobox__label">
+                            Tại văn phòng 12 Ngô Gia Tự, Đức Giang, Long Biên, Hà Nội 
+                          </span>
+                        </label>
+                    </div>
+
+                    <div >
+                        <label class="radiobox pre-wrap">
+                          <input type="radio" class="radiobox__input" name="invoice-receipt-type">
+                          <span class="radiobox__label">
+                            Tại văn phòng 3/2 Đường D1, Phường 25, Quận Bình Thạnh, TP Hồ Chí Minh 
+                          </span>
+                        </label>
+                    </div>
+
+            </div>
+
+           </div>
+        </form>
+    </div>
+</div>
+
+<div class="mb-4"></div>
+
+<div class="d-flex">
+    <button type="button" class="btn el-button el-button--disabled el-button--large ml-auto" >Tiếp tục thanh toán</button>
+</div>
+<div class="mb-2"></div>
+
+<div class="d-flex">
+    <button type="button" class="btn el-button el-button--primary el-button--large ml-auto" data-toggle="modal" data-target="#ticket-price-change-modal">Tiếp tục thanh toán</button>
+</div>
+<div class="mb-5"></div>
+
+
+<div class="modal fade ticket-modal" id="ticket-price-change-modal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+      <div class="modal-header">
+        <h4 class="modal-title mx-auto">Giá vé đã thay đổi</h4>
+      </div>
+      
+      <div class="modal-body container">
+        <div class="row">
+          <div class="col-sm-10 mx-auto">
+            <p>Vì lý do từ hãng hàng không nên giá vé đã thay đổi. Giá được cập nhật như sau: </p>
+            <br/>
+            <p class="f-18">
+              <b>Giá cũ: </b> 
+              <span class="semi-bold">2,062,000 VND </span>
+            </p>
+
+            <p class="f-18">
+              <b>Giá mới: </b> 
+              <span class="el-text">
+                <span class="semi-bold">2,662,000 VND </span>
+                (Tăng 600,000 VND)
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal-footer container">
+        <div class="row">
+          <div class="col-sm order-1 order-sm-0">
+            <button type="button" class="btn el-button" data-dismiss="modal">Chọn lại vé khác</button>
+          </div>
+          <div class="col-sm">
+            <button type="button" class="btn el-button el-button--primary" data-dismiss="modal">Đặt vé</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="ticket-summary">
+    <div class="ticket-summary__header">
+        <div class="two-side big">
+            <div class="two-side--left bold">
+                Tổng cộng
+            </div>
+            <div class="two-side--right el-text">
+                <b>17,292,000</b> VNĐ
+            </div>
+        </div>
+        <div class="text-right small">
+            Giá đã bao gồm thuế và phụ phí
+        </div>
+    </div>	
+    <div class="ticket-summary__content">
+        <div class="two-side ticket-summary__sub-header">
+            <div class="two-side--left">
+                Tóm tắt
+            </div>
+            <div class="two-side--right">
+                <i class="ml-auto el-icon el-icon--arrow-down"></i>
+            </div>
+        </div>
+
+        <p></p>
+
+        <div class="ticket-summary__sub-header">
+            <i class="el-icon el-icon--flight"></i>
+            <b class="el-text">Chiều đi</b>
+        </div>
+        <b>Hà Nội</b> đến <b>Hồ Chí Minh</b><br/>
+        06:30 -> 08:30, Thứ 3 - 20/03/2019<br/>
+
+        <p></p>
+
+        <b>Người lớn:</b><br/>
+        <div class="two-side">
+            <div class="two-side--left">
+                2 x 1,312,000 = 
+            </div>
+            <div class="two-side--right">
+                <b class="el-text">
+                    2,224,000
+                </b>
+            </div>
+        </div>
+        <div class="two-side">
+            <div class="two-side--left">
+                1 x 15kg hành lý  = 
+            </div>
+            <div class="two-side--right">
+                <b class="el-text">
+                    160,000
+                </b>
+            </div>
+        </div>
+
+        <p></p>
+
+        <b>Trẻ em:</b><br/>
+        <div class="two-side">
+            <div class="two-side--left">
+                1 x 1,012,000 = 
+            </div>
+            <div class="two-side--right">
+                <b class="el-text">
+                    1,012,000
+                </b>
+            </div>
+        </div>
+
+        <p></p>
+        
+        <b>Em bé:</b><br/>
+        <div class="two-side">
+            <div class="two-side--left">
+                1 x 845,000 = 
+            </div>
+            <div class="two-side--right">
+                <b class="el-text">
+                    845,000
+                </b>
+            </div>
+        </div>
+            
+        <div class="ticket-summary__delimiter">
+        </div>
+
+        <div class="ticket-summary__sub-header">
+            <i class="el-icon el-icon--flight"></i>
+            <b class="el-text">Chiều về</b>
+        </div>
+        <b>Hà Nội</b> đến <b>Hồ Chí Minh</b><br/>
+        06:30 -> 08:30, Thứ 7 - 25/03/2019<br/>
+        
+        <p></p>
+
+        <b>Người lớn:</b><br/>
+        <div class="two-side">
+            <div class="two-side--left">
+                2 x 1,312,000 = 
+            </div>
+            <div class="two-side--right">
+                <b class="el-text">
+                    2,224,000
+                </b>
+            </div>
+        </div>
+        <div class="two-side">
+            <div class="two-side--left">
+                1 x 15kg hành lý  = 
+            </div>
+            <div class="two-side--right">
+                <b class="el-text">
+                    160,000
+                </b>
+            </div>
+        </div>
+
+        <p></p>
+
+        <b>Trẻ em:</b><br/>
+        <div class="two-side">
+            <div class="two-side--left">
+                1 x 1,012,000 = 
+            </div>
+            <div class="two-side--right">
+                <b class="el-text">
+                    1,012,000
+                </b>
+            </div>
+        </div>
+
+        <p></p>
+        
+        <b>Em bé:</b><br/>
+        <div class="two-side">
+            <div class="two-side--left">
+                1 x 845,000 = 
+            </div>
+            <div class="two-side--right">
+                <b class="el-text">
+                    845,000
+                </b>
+            </div>
+        </div>
+        
+        <p></p>
+
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+  <section class="partners">
+  <div class="container">
+    <div class="row partners__delimiter">
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment1.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment2.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment3.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment4.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment5.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment6.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment7.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment8.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment9.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment10.png" class="partners__logo"/>
+      </div>
+    </div>
+    <div class="row partners__delimiter">
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/9.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/10.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/8.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/1.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/7.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/6.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/5.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/4.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/3.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/2.png" class="partners__logo"/>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="footer__brand">
+                    <img src="/static/Group 35.svg" class="footer__logo">
+                    CÔNG TY CỔ PHẦN ELINES
+                </div>
+            </div>
+      <div class="col-md-3 ml-auto">
+        
+      </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="footer__title">
+                    <u>Hà Nội</u>
+                </p>
+                <p>
+                    <b>Địa chỉ 1: </b>
+                    Tầng 3,333 Trần Khát Chân, Hai Bà Trưng 
+                    <br/>
+                    <b>Địa chỉ 2: </b>
+                    Số 12 Ngô Gia Tự, Đức Giang, Long Biên
+                </p>
+                <p class="footer__title">
+                    <u>Hồ Chí Minh</u>
+                </p>
+                <p>
+                    <b>Địa chỉ: </b>
+                    Số 3/2 Đường D1, Phường 25, Quận Bình Thạnh
+                </p>
+                <p>
+                    <b>
+                        Mã số thuế:
+                    </b>
+                    0104511457
+                </p>
+                <p>
+                    <b>
+                        Email:
+                    </b>
+                    elines.vna@gmail.com
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p class="footer__title">
+                    Thông tin khác
+                </p>
+                <p>
+                    <a href="#">
+                        Chính sách bảo mật
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Văn hóa doanh nghiệp
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Cơ hội việc làm
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Dành cho công ty du lịch
+                    </a>
+                </p>
+                <div class="footer__verification">
+          <img src="/static/bocongthuong.png" class="mr-3">
+          <img src="/static/dmca.png" class="mr-3">
+        </div>
+            </div>
+            <div class="col-md-3">
+                <img src="/static/ico fb.svg" class="mr-2 mb-2"/>
+        <img src="/static/ico tumblt.svg" class="mr-2 mb-2"/>
+        <img src="/static/ico vimeo.svg" class="mr-2 mb-2"/>
+      </div>
+        </div>
+        <div class="footer__copyright text-center">
+            Ⓒ 2018 - http://elines.vn
+        </div>
+    </div>
+</section>
+  <section class="support">
+    <img src="/static/Facebook_Messenger.png"	class="support__icon"/>
+    <img src="/static/Zalo.png"	class="support__icon"/>
+</section>
+<script type="text/javascript" src="/runtime.6020075d47972e57cc15.bundle.js"></script><script type="text/javascript" src="/vendors.594510b8979afe9abc97.bundle.js"></script><script type="text/javascript" src="/client.2508cff571b46f03270f.bundle.js"></script><script type="text/javascript" src="/vendor.c9463f8b853c97f2eb1a.bundle.js"></script></body>

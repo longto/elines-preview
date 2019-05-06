@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="18px" height="18px" viewBox="47.5 40.5 18 18" enable-background="new 47.5 40.5 18 18" xml:space="preserve">
+<filter  id="filter-2" filterUnits="objectBoundingBox" height="1276.5%" width="1276.5%" y="-547.1%" x="-588.2%">
+	<feMorphology  result="shadowSpreadOuter1" in="SourceAlpha" operator="dilate" radius="0.5"></feMorphology>
+	<feOffset  dy="7" dx="0" result="shadowOffsetOuter1" in="shadowSpreadOuter1"></feOffset>
+	<feMorphology  result="shadowInner" in="SourceAlpha" operator="erode" radius="1"></feMorphology>
+	<feOffset  dy="7" dx="0" result="shadowInner" in="shadowInner"></feOffset>
+	<feComposite  in2="shadowInner" result="shadowOffsetOuter1" in="shadowOffsetOuter1" operator="out"></feComposite>
+	<feGaussianBlur  stdDeviation="32" result="shadowBlurOuter1" in="shadowOffsetOuter1"></feGaussianBlur>
+	<feColorMatrix  type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" in="shadowBlurOuter1"></feColorMatrix>
+</filter>
+<title>6DA4BD71-93EF-4F3C-A9D1-796EB218541C</title>
+<desc>Created with sketchtool.</desc>
+<g id="Page-1">
+	<g id="_x31_.0-Homepage-V1" transform="translate(-834.000000, -364.000000)">
+		<g id="Group-5" transform="translate(166.000000, 385.000000)">
+			<g id="icon-check-" transform="translate(716.000000, 20.000000)">
+				<g id="Frame">
+					<g filter="url(#filter-2)">
+						<path id="path-1_2_" d="M4,0h9c2.209,0,4,1.791,4,4v9c0,2.209-1.791,4-4,4H4c-2.209,0-4-1.791-4-4V4C0,1.791,1.791,0,4,0z"/>
+					</g>
+					<g>
+						<path id="path-1_1_" fill="none" stroke="#006790" d="M4,0h9c2.209,0,4,1.791,4,4v9c0,2.209-1.791,4-4,4H4
+							c-2.209,0-4-1.791-4-4V4C0,1.791,1.791,0,4,0z"/>
+					</g>
+				</g>
+				<g id="Icons_x2F_16px_x2F_Check" transform="translate(4.000000, 5.000000)">
+					<path id="Path" fill="#006790" d="M7.645,0.256c0.311-0.342,0.813-0.342,1.123,0s0.311,0.896,0,1.237l-4.765,5.25
+						c-0.311,0.342-0.813,0.342-1.123,0L0.232,3.827c-0.31-0.342-0.31-0.896,0-1.237c0.31-0.342,0.813-0.342,1.123,0l2.086,2.298
+						L7.645,0.256z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

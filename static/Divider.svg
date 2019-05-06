@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="2px" viewBox="0 0 30 2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Divider</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="8.0-Tin-tức-listing" transform="translate(-691.000000, -3135.000000)" fill="#006790">
+            <g id="Pagination" transform="translate(165.000000, 3070.000000)">
+                <g id="Group-2" transform="translate(347.000000, 41.000000)">
+                    <g id="Page-Item" transform="translate(116.000000, 0.000000)">
+                        <g id="Page-Current" transform="translate(63.000000, 0.000000)">
+                            <polygon id="Divider" points="0 24 30 24 30 26 0 26"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

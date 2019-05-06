@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/static/ico.png">
+<title>Elines</title>	
+<link href="/2.css" rel="stylesheet"></head>
+
+<body>
+    <div class="container">
+    <nav class="row navbar navbar-expand-lg navbar-light el-navbar">
+    <a class="navbar-brand" href="/">
+        <img src="/static/Group 35.svg" class="logo"></a>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">
+                Về Chúng Tôi 
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Hướng Dẫn</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Thông Tin</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Xem Đơn Hàng</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Tin Tức</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Đăng Nhập</a>
+        </li>
+        <li class="nav-item hot-line">
+            <a class="nav-link" href="tel:19001250">
+                <i class="el-icon el-icon--phone"></i>
+                1900 1250
+            </a>
+        </li>
+    </ul>
+    </div>
+    </nav>
+</div>
+  <div class="step__hero ">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="step__indicator ">
+                    <b class="step--bold">1. </b>
+                    Lựa chọn chuyến bay
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="step__indicator">
+                    <b class="step--bold">2. </b>
+                    Nhập thông tin khách
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="step__indicator step__indicator--active">
+                    <b class="step--bold">3. </b>
+                    Xác nhận & thanh toán
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="step__indicator step__indicator--active">
+                    Thay đổi
+                    <i class="el-icon el-icon--edit"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+    <section class="container step__body payment" id="payment-method-group">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="payment__header">
+                Chọn hình thức thanh toán
+            </div>
+            <div class="payment__method" data-toggle="collapse" data-target="#bank-transfer"  aria-expanded="true">
+                <i class="el-icon el-icon--credit-card"></i>
+                <i class="el-icon el-icon--credit-card-2"></i>
+                Chuyển khoản ngân hàng
+            </div>
+
+            <div class="payment__method" data-toggle="collapse" data-target="#payment-at-elines">
+                <i class="el-icon el-icon--building"></i>
+                <i class="el-icon el-icon--building-2"></i>
+                Thanh toán tại văn phòng Elines
+            </div>
+
+            <div class="payment__method" data-toggle="collapse" data-target="#payment-at-home">
+                <i class="el-icon el-icon--house"></i>
+                <i class="el-icon el-icon--house-2"></i>
+                Thanh toán tại nhà quý khách
+            </div>
+
+            <div class="payment__method" data-toggle="collapse" data-target="#payment-at-payoo">
+                <i class="el-icon el-icon--payoo"></i>
+                <i class="el-icon el-icon--payoo-2"></i>
+                Thanh toán tại cửa hàng gần nhà Payoo
+            </div>
+
+            <div class="payment__method" data-toggle="collapse" data-target="#payment-gateway">
+                <i class="el-icon el-icon--viettel"></i>
+                <i class="el-icon el-icon--viettel-2"></i>
+                Thanh toán tại điểm giao dịch Viettel
+            </div>
+            
+        </div>
+        <div class="col-lg-8">
+            <div class="payment__header">
+                Thông tin chi tiết
+            </div>
+            
+<div class="collapse show" id="bank-transfer" data-parent="#payment-method-group">
+    <form class="el-form">
+        <label class="radiobox mb-2" data-toggle="collapse" data-target="#transfer-at-counter"  aria-expanded="true">
+          <input type="radio" class="radiobox__input" name="payment-at-elines" checked="checked">
+          <span class="radiobox__label bold">
+            Thanh toán trực tiếp tại quầy giao dịch ngân hàng
+          </span>
+        </label>
+        <label class="radiobox mb-2" data-toggle="collapse" data-target="#transfer-by-ATM">
+          <input type="radio" class="radiobox__input" name="payment-at-elines">
+          <span class="radiobox__label bold">
+            Thanh toán online bằng thẻ ATM nội địa có Internet Banking
+          </span>
+        </label>
+        <label class="radiobox mb-2" data-toggle="collapse" data-target="#transfer-by-VISA">
+          <input type="radio" class="radiobox__input" name="payment-at-elines">
+          <span class="radiobox__label bold">
+            Thanh toán online bằng thẻ tín dụng, ghi nợ quốc tế
+          </span>
+        </label>
+    </form>
+
+
+    <div class="payment__delimiter"></div>
+
+    <div id="transfer-group">
+        <div id="transfer-at-counter" class="collapse show" data-parent="#transfer-group">
+
+  <p><b>Thanh toán trực tiếp tại quầy giao dịch ngân hàng</b></p>
+  <ul>
+    <li>
+      <b>Thời gian giao dịch:</b>
+      Trong giờ hành chính
+    </li>
+    <li>
+      <b>Phí giao dịch:</b>
+      Phí theo quy định của từng Ngân hàng
+    </li>
+  </ul>
+  
+  <div class="row no-gutters bank__list">
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment7.png" class=" bank__logo bank__logo--active"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment2.png" class=" bank__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment3.png" class=" bank__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment4.png" class=" bank__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment5.png" class=" bank__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment6.png" class=" bank__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment1.png" class=" bank__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment8.png" class=" bank__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment9.png" class=" bank__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment10.png" class=" bank__logo"/>
+  </div>
+</div>
+<p></p>
+
+  <div class="row">
+  <div class="col-12 col-md-2">
+    <img src="/static/payment7.png" class=" bank__logo bank__logo--no-border"/>
+  </div>
+  <div class="col-12 col-md-10">
+    <b>Ngân hàng TMCP Ngoại Thương Việt Nam - Vietcombank (VCB) - VNĐ</b>
+    <p></p>
+    <div class="row">
+      <div class="col-4 mb-2">
+        <b>
+          Tên tài khoản
+        </b>
+      </div>
+      <div class="col-8 mb-2">
+        Công ty Cổ phần Elines
+      </div>
+
+      <div class="col-4 mb-2">
+        <b>
+          Số tài khoản
+        </b>
+      </div>
+      <div class="col-8 mb-2">
+        0011 0035 39780
+      </div>
+
+      <div class="col-4 mb-2">
+        <b>
+          Chi Nhánh
+        </b>
+      </div>
+      <div class="col-8 mb-2">
+        Sở Giao Dịch Hà Nội
+      </div>
+
+      <div class="col-4 mb-2">
+        <b>
+          Số tiền
+        </b>
+      </div>
+      <div class="col-8 el-text mb-2">
+        <span class="semi-bold">17,092,000 VND</span>
+      </div>
+
+      <div class="col-4 mb-2">
+        <b>
+          Nội dung
+        </b>
+      </div>
+      <div class="col-8 el-text mb-2">
+        <span class="semi-bold">ELINES1234</span>
+      </div>
+
+      <div class="col-4 mb-2">
+        <b>
+          Điểm giao dịch
+        </b>
+        <p></p>
+    </div>
+      <div class="col-8 mb-2">
+        <a href="#" class="semi-bold el-text">https://vietcombank.ngan-hang.com/chi-nhanh/</a>
+      </div>
+
+    </div>
+  </div>
+</div>  
+
+<p></p>
+
+</div>
+        <div id="transfer-by-ATM" class="collapse" data-parent="#transfer-group">
+
+  <p><b>Thanh toán online bằng thẻ ATM nội địa có Internet Banking</b></p>
+  <ul>
+    <li>
+      <b>Thời gian giao dịch:</b>
+      Trong giờ hành chính
+    </li>
+    <li>
+      <b>Phí giao dịch:</b>
+      Phí theo quy định của từng Ngân hàng
+    </li>
+  </ul>
+  
+  <div class="row no-gutters bank__list">
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment7.png" class=" bank__logo bank__logo--active"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment2.png" class=" bank__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment3.png" class=" bank__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment4.png" class=" bank__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment5.png" class=" bank__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment6.png" class=" bank__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment1.png" class=" bank__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment8.png" class=" bank__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment9.png" class=" bank__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/payment10.png" class=" bank__logo"/>
+  </div>
+</div>
+<p></p>
+
+  <div class="row">
+  <div class="col-12 col-md-2">
+    <img src="/static/payment7.png" class=" bank__logo bank__logo--no-border"/>
+  </div>
+  <div class="col-12 col-md-10">
+    <b>Ngân hàng TMCP Ngoại Thương Việt Nam - Vietcombank (VCB) - VNĐ</b>
+    <p></p>
+    <div class="row">
+      <div class="col-4 mb-2">
+        <b>
+          Tên tài khoản
+        </b>
+      </div>
+      <div class="col-8 mb-2">
+        Công ty Cổ phần Elines
+      </div>
+
+      <div class="col-4 mb-2">
+        <b>
+          Số tài khoản
+        </b>
+      </div>
+      <div class="col-8 mb-2">
+        0011 0035 39780
+      </div>
+
+      <div class="col-4 mb-2">
+        <b>
+          Chi Nhánh
+        </b>
+      </div>
+      <div class="col-8 mb-2">
+        Sở Giao Dịch Hà Nội
+      </div>
+
+      <div class="col-4 mb-2">
+        <b>
+          Số tiền
+        </b>
+      </div>
+      <div class="col-8 el-text mb-2">
+        <span class="semi-bold">17,092,000 VND</span>
+      </div>
+
+      <div class="col-4 mb-2">
+        <b>
+          Nội dung
+        </b>
+      </div>
+      <div class="col-8 el-text mb-2">
+        <span class="semi-bold">ELINES1234</span>
+      </div>
+
+      <div class="col-4 mb-2">
+        <b>
+          Điểm giao dịch
+        </b>
+        <p></p>
+    </div>
+      <div class="col-8 mb-2">
+        <a href="#" class="semi-bold el-text">https://vietcombank.ngan-hang.com/chi-nhanh/</a>
+      </div>
+
+    </div>
+  </div>
+</div>  
+
+<p></p>
+
+</div>
+        <div id="transfer-by-VISA" class="collapse" data-parent="#transfer-group">
+
+  <p><b>Thanh toán online bằng thẻ tín dụng, ghi nợ quốc tế</b></p>
+  <ul>
+    <li>
+      <b>Thời gian giao dịch:</b>
+      Quý khách có thể thanh toán 24/7
+    </li>
+    <li>
+      <b>Phí giao dịch:</b><br/>
+      - Thẻ phát hành tại VN : 2,2% + 3.500 VNĐ <br/>
+      - Thẻ phát hành ở nước ngoài : 3,5%
+      1% tổng giá trị đơn hàng<br/>
+    </li>
+  </ul>
+
+  <p>
+    <img src="/static/visa-list.png" class="visa__list ml-4"/>
+  </p>
+
+</div>
+    </div>
+    
+    
+</div>
+            <div class="collapse" id="payment-at-elines" data-parent="#payment-method-group">
+    <p>Sau khi đặt hàng thành công, Quý khách vui lòng qua văn phòng Elines để thanh toán và nhận vé.</p>
+
+    <ul>
+      <li>
+        <b>Thời gian giao dịch:</b>
+        Từ 8h sáng tới 20h30 hàng ngày
+      </li>
+      <li>
+        <b>Phí giao dịch:</b>
+        Miễn phí<br/>
+      </li>
+    </ul>
+    <div class="payment__delimiter"></div>
+
+    <p></p> 
+    Vui lòng chọn đúng văn phòng gần địa chỉ nhà của Quý khách
+    <p></p> 
+
+
+    <form class="el-form">
+        <p >
+        <b>VĂN PHÒNG ELINES TẠI HÀ NỘI</b>
+      </p>
+
+        <label class="radiobox mb-2">
+          <input type="radio" class="radiobox__input" name="payment-at-elines" checked="checked">
+          <span class="radiobox__label bold">
+            Địa chỉ 1: Tầng 3, 333 Trần Khát Chân, Hai Bà Trưng, Hà Nội
+          </span>
+        </label>
+
+        <label class="radiobox mb-2">
+          <input type="radio" class="radiobox__input" name="payment-at-elines">
+          <span class="radiobox__label bold">
+            Địa chỉ 2 : Số 12 Ngô Gia Tự, Đức Giang, Long Biên, Hà Nội
+          </span>
+        </label>
+
+        <p></p>
+
+        <p>
+        <b>VĂN PHÒNG ELINES TẠI TP.HỒ CHÍ MINH</b>
+      </p>
+
+        <label class="radiobox mb-2">
+          <input type="radio" class="radiobox__input" name="payment-at-elines">
+          <span class="radiobox__label bold">
+            Địa chỉ: : Số 3/2 Đường D1, Phường 25, Quận Bình Thạnh, TP Hồ Chí Minh 
+          </span>
+        </label>
+
+        <p></p>
+
+    </form>
+
+    <img src="/static/homepage/map.png" class="w-100"/>
+
+</div>
+
+
+            <div class="collapse" id="payment-at-home" data-parent="#payment-method-group">
+  <p>Nhân viên Elines sẽ giao vé và thu tiền tại địa chỉ khách hàng cung cấp</p>
+
+  <ul>
+    <li>
+      <b>Thời gian giao dịch:</b>
+      Trong giờ hành chính
+    </li>
+    <li>
+      <b>Phí giao dịch:</b><br/>
+      - Dưới 7Km tính từ văn phòng Elines: 20.000 (Vnđ)<br/>
+      - Trên 7Km tính từ văn phòng Elines: 50.000 (Vnđ)<br/>
+    </li>
+  </ul>
+
+  <div class="payment__delimiter"></div>
+
+  Quý khách vui lòng điền đầy đủ thông tin địa chỉ để nhân viên ELINES giao vé và thu tiền.
+  <p></p>
+
+  <span class="text-danger">
+    Quý khách lưu ý: Hình thức thanh toán này chỉ áp dụng cho các địa chỉ tại khu vực nội thành Hà Nội và Tp Hồ Chí Minh.
+  </span>
+  <p></p>
+  <p></p>
+
+  <form class="el-form mb-5">
+    <div class="form-row">
+
+      <div class="form-group col-md-6 no-wrap">
+        <label for="fullName" require>Tên người nhận</label>
+        <input type="text" class="form-control" id="fullName" placeholder="Nguyễn Văn A">
+      </div>
+
+      <div class="form-group col-md-4 no-wrap">
+        <label for="tel" require>Điện thoại di động</label>
+        <input type="tel" class="form-control" id="tel" placeholder="0987654321">
+      </div>
+
+      <div class="form-group col-md-6 no-wrap">
+        <label for="address" require>Địa chỉ</label>
+        <input type="text" class="form-control" id="address" placeholder="Điền địa chỉ">
+      </div>
+
+      <div class="form-group col-md-6 no-wrap">
+        <label for="ward" require>Phường / Xã</label>
+        <input type="text" class="form-control" id="ward" placeholder="Phường">
+      </div>
+
+      <div class="form-group col-md-6 no-wrap">
+        <label for="district" require>Quận</label>
+        <input type="text" class="form-control" id="district" placeholder="Quận">
+      </div>
+
+      <div class="form-group col-md-6 no-wrap">
+        <label for="city" require>Thành phố</label>
+        <input type="text" class="form-control" id="city" placeholder="Thành phố">
+      </div>
+
+      <div class="form-group col-md-6 no-wrap">
+        <label for="fee"> 
+          <b>Phí giao hàng</b>
+        </label>
+        <input type="text" class="form-control el-text" id="fee" placeholder="phí giao hàng" value="20,000VNĐ đến 50,000 VNĐ" readonly="true">
+      </div>
+
+      <div class="form-group col-md-6 no-wrap">
+        <label for="coupon" >Mã giảm giá</label>
+        <input type="text" class="form-control" id="coupon" placeholder="">
+      </div>
+
+    </div>
+  </form>
+
+</div>
+            <div class="collapse" id="payment-at-payoo" data-parent="#payment-method-group">
+
+  <p>Phù hợp với các giao dịch ngày nghỉ, lễ và ngoài giờ hành chính</p>
+
+  <ul>
+    <li>
+      <b>Thời gian giao dịch:</b>
+      Theo thời gian quy định của cửa hàng, <b>Vinmart + đến 22h, K+ trực 24/7</b>
+    </li>
+    <li>
+      <b>Phí giao dịch:</b>
+      1% tổng giá trị đơn hàng + 5000 vnđ<br/>
+    </li>
+    <li>
+      <b>Địa điểm giao dịch:</b>
+      Xem danh sách các điểm giao dịch gần nhà bạn <span class="text-danger"><u><b>tại đây</b></u></span><br/>
+    </li>
+  </ul>
+
+  <p></p>
+
+  <div class="row no-gutters payoo__list">
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo1.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo2.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo3.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo4.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo5.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo6.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo7.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo8.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo9.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo10.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo11.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo12.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo13.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo14.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo15.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo16.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo17.jpg" class="payoo__logo"/>
+  </div>
+  <div class="col-4 col-sm-3 col-md-2">
+    <img src="/static/Payoo-logo18.jpg" class="payoo__logo"/>
+  </div>
+</div>
+<p></p>
+
+</div>
+            <div class="collapse" id="payment-gateway" data-parent="#payment-method-group">
+
+  <p>Phù hợp với các giao dịch ngày nghỉ, lễ và ngoài giờ hành chính</p>
+
+  <ul>
+    <li>
+      <b>Thời gian giao dịch:</b>
+      Từ 8h sáng tới 20h30 hàng ngày tất cả các ngày trong tuần (Cả ngày lễ, thứ 7, Chủ nhật)
+    </li>
+    <li>
+      <b>Phí giao dịch:</b>
+      Phí theo biểu phí của viettel<br/>
+    </li>
+    <li>
+      <b>Địa điểm giao dịch:</b>
+      Xem danh sách các điểm giao dịch gần nhà bạn <span class="text-danger"><u><b>tại đây</b></u></span><br/>
+    </li>
+  </ul>
+
+    <div class="payment__delimiter"></div>
+
+    <p></p>
+    Khi thanh toán vé máy bay cho Elines, Quý khách vui lòng nhập đầy đủ thông tin như sau:
+    <p></p>
+
+    <b>Ngân hàng Quân đội - MBBank </b> <br/>
+    <b>Chi Nhánh Hoàn Kiếm Hà Nội </b> <br/>
+    Tên tài khoản : <b>Công ty Cổ phần Elines</b> <br/>
+    Số tài khoản : <b>0761100258006</b> <br/>
+
+    <br/>
+</div>
+            <div class="mb-3"></div>
+            <button type="button" class="btn el-button el-button--primary el-button--large" data-dismiss="modal">Tiếp tục</button>
+        </div>
+
+    </div>
+    
+    <div class="mb-5"></div>
+</section>	
+  <section class="partners">
+  <div class="container">
+    <div class="row partners__delimiter">
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment1.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment2.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment3.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment4.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment5.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment6.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment7.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment8.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment9.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/payment10.png" class="partners__logo"/>
+      </div>
+    </div>
+    <div class="row partners__delimiter">
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/9.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/10.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/8.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/1.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/7.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/6.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/5.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/4.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/3.png" class="partners__logo"/>
+      </div>
+      <div class="col-4 col-sm-2 col-lg text-center">
+        <img src="/static/2.png" class="partners__logo"/>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="footer__brand">
+                    <img src="/static/Group 35.svg" class="footer__logo">
+                    CÔNG TY CỔ PHẦN ELINES
+                </div>
+            </div>
+      <div class="col-md-3 ml-auto">
+        
+      </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="footer__title">
+                    <u>Hà Nội</u>
+                </p>
+                <p>
+                    <b>Địa chỉ 1: </b>
+                    Tầng 3,333 Trần Khát Chân, Hai Bà Trưng 
+                    <br/>
+                    <b>Địa chỉ 2: </b>
+                    Số 12 Ngô Gia Tự, Đức Giang, Long Biên
+                </p>
+                <p class="footer__title">
+                    <u>Hồ Chí Minh</u>
+                </p>
+                <p>
+                    <b>Địa chỉ: </b>
+                    Số 3/2 Đường D1, Phường 25, Quận Bình Thạnh
+                </p>
+                <p>
+                    <b>
+                        Mã số thuế:
+                    </b>
+                    0104511457
+                </p>
+                <p>
+                    <b>
+                        Email:
+                    </b>
+                    elines.vna@gmail.com
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p class="footer__title">
+                    Thông tin khác
+                </p>
+                <p>
+                    <a href="#">
+                        Chính sách bảo mật
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Văn hóa doanh nghiệp
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Cơ hội việc làm
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        Dành cho công ty du lịch
+                    </a>
+                </p>
+                <div class="footer__verification">
+          <img src="/static/bocongthuong.png" class="mr-3">
+          <img src="/static/dmca.png" class="mr-3">
+        </div>
+            </div>
+            <div class="col-md-3">
+                <img src="/static/ico fb.svg" class="mr-2 mb-2"/>
+        <img src="/static/ico tumblt.svg" class="mr-2 mb-2"/>
+        <img src="/static/ico vimeo.svg" class="mr-2 mb-2"/>
+      </div>
+        </div>
+        <div class="footer__copyright text-center">
+            Ⓒ 2018 - http://elines.vn
+        </div>
+    </div>
+</section>
+  <section class="support">
+    <img src="/static/Facebook_Messenger.png"	class="support__icon"/>
+    <img src="/static/Zalo.png"	class="support__icon"/>
+</section>
+<script type="text/javascript" src="/runtime.6020075d47972e57cc15.bundle.js"></script><script type="text/javascript" src="/vendors.594510b8979afe9abc97.bundle.js"></script><script type="text/javascript" src="/client.2508cff571b46f03270f.bundle.js"></script><script type="text/javascript" src="/vendor.c9463f8b853c97f2eb1a.bundle.js"></script></body>
